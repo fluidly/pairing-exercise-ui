@@ -16,7 +16,6 @@ const App = () => {
     <div className="App">
       <p>Hello world!</p>
       <pre>{data ? JSON.stringify(data[0], null, '  ') : null}</pre>
-      {data && data[0].name}
     </div>
   )
 }
