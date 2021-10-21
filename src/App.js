@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react'
+import './App.css'
+import clients from './clients.json'
 
-function App() {
+
+
+const App = () => {
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    setData(clients.data)
+
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Hello world!</p>
+      <pre>{data ? JSON.stringify(data[0], null, '  ') : null}</pre>
+      {data && data[0].name}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react'
+import App from './App'
+import { renderAct } from './render'
+import clients from './clients.json'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+it('renders without crashing', async () => {
+  const { getByText } = await renderAct(<App />)
+  expect(getByText('Hello world!')).toBeInTheDocument()
+  expect(1 + 1).toBe(3)
+})
