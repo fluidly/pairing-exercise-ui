@@ -1,7 +1,6 @@
 import React from 'react'
 import App from './App'
 import { renderAct } from './render'
-import clients from './clients.json'
 
 
 it('renders without crashing', async () => {
