@@ -1,6 +1,6 @@
 This is a pairing exercise for prospective front-end developers.
 
-The aim is to create a responsive table similar to the screenshot in this repo (portfolio_ui.png)
+The aim is to create a responsive table similar to the screenshot in this repo (portfolio.png)
 
 The candidate can guide the exercise and do as much as is feasible within the time limit (~40-45 mins).
 
