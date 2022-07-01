@@ -1,9 +1,9 @@
-import { render, act } from '@testing-library/react'
+import { render, act } from "@testing-library/react";
 
 export const renderAct = async (component) => {
-  let wrapper
+  let wrapper;
   await act(async () => {
-    wrapper = render(component)
-  })
-  return wrapper
-}
+    wrapper = render(component);
+  });
+  return wrapper;
+};
