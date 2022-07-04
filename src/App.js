@@ -1,23 +1,20 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import clients from './clients.json'
-
-
+import { useState, useEffect } from "react";
+import "./App.css";
+import clients from "./clients.json";
 
 const App = () => {
-  const [data, setData] = useState(null)
+  const [data, setData] = useState(null);
 
   useEffect(() => {
-    setData(clients.data)
-
-  }, [])
+    setData(clients.data);
+  }, []);
 
   return (
     <div className="App">
       <p>Hello world!</p>
-      <pre>{data ? JSON.stringify(data[0], null, '  ') : null}</pre>
+      <pre>{data ? JSON.stringify(data[0], null, "  ") : null}</pre>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

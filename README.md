@@ -1,6 +1,6 @@
 This is a pairing exercise for prospective front-end developers.
 
-The aim is to create a responsive table similar to the screenshot in this repo (portfolio.png)
+The aim is to create a responsive table similar to the screenshot in `portfolio.png`.
 
 The candidate can guide the exercise and do as much as is feasible within the time limit (~40-45 mins).
 
@@ -13,4 +13,4 @@ How to run:
 - At the end of the test, commit candidate's code and push to GitHub
 - You can run tests with Jest: `yarn test`
 
-The master branch should be kept clean.
+The `main` branch should be kept clean.
